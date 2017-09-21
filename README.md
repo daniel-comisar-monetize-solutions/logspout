@@ -1,0 +1,1 @@
+The suggested approach in the Papertrail documentation is to run a logger in a "sidecar container" on each pod using a DaemonSet. I'm using logspout, but other loggers like fluentd and remote_syslog2 are supported. If you deploy the attached file to your Kubernetes cluster, it should start logging from all the containers to papertrailapp.com.
